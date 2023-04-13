@@ -1,0 +1,13 @@
+public class Kata {
+    public static int findShort(String s) {
+        String [] arr = s.split(" ");
+      int minLength = 10;
+      for(String s1:arr){
+        if(s1.length()<minLength){
+          minLength=s1.length();
+        }
+        
+      }
+      return minLength;
+    }
+}
